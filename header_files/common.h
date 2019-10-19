@@ -4,10 +4,12 @@
 #include <iostream>
 #include <cstdlib>
 #include <opencv2/opencv.hpp>
+#include <algorithm>
 
 typedef struct{
 	int x;
 	int y;
+	int currentClusterId;
 }pxLocation;
 
 
