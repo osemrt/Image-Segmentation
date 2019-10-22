@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <string>
 #include <vector>
+#include <string> 
 
 
 typedef struct{
@@ -14,6 +15,12 @@ typedef struct{
 	int y;
 	int currentClusterId;
 }pxLocation;
+
+typedef struct {
+	int R;
+	int G;
+	int B;
+}Color;
 
 
 using namespace cv;

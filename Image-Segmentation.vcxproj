@@ -87,11 +87,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(OPENCV4_DIR)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(OPENCV4_DIR)\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opencv_world411d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -118,16 +118,38 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(OPENCV4_DIR)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(OPENCV4_DIR)\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world411d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BFS.cpp" />
+    <ClCompile Include="createDirectionMatrix.cpp" />
+    <ClCompile Include="createImageLocationMatrix.cpp" />
+    <ClCompile Include="createMatrix.cpp" />
+    <ClCompile Include="euclideanDistance.cpp" />
+    <ClCompile Include="extractPixelFromPreviousCluster.cpp" />
+    <ClCompile Include="findClosestCentroid.cpp" />
+    <ClCompile Include="findConnectedComponents.cpp" />
+    <ClCompile Include="generateRandomLocationArray.cpp" />
+    <ClCompile Include="getColorStructureForPixel.cpp" />
+    <ClCompile Include="gettinKValueFromUser.cpp" />
+    <ClCompile Include="hasSameColor.cpp" />
+    <ClCompile Include="includePixelToCluster.cpp" />
+    <ClCompile Include="isConnected.cpp" />
+    <ClCompile Include="isValid.cpp" />
+    <ClCompile Include="k-means.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="randomColor.cpp" />
     <ClCompile Include="readImageFromUser.cpp" />
+    <ClCompile Include="recalculateCenterForClusters.cpp" />
+    <ClCompile Include="createConnectedMatrix.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header_files\common.h" />

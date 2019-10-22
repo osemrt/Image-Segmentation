@@ -10,6 +10,8 @@ void k_means(Mat* image, int N) {
 	int closestCentroidIndex;
 	bool flag = true;
 
+	int k = 0;//test
+
 	while (flag) {
 		flag = true;
 		for (int i = 0; i < image->rows; i++) {
@@ -29,6 +31,8 @@ void k_means(Mat* image, int N) {
 		if (!flag) {
 			recalculateCenterForClusters(&clusteredPixels, centroids, N);
 		}
+
+		
 
 	}
 
