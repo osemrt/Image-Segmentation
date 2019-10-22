@@ -13,12 +13,8 @@ void findConnectedComponents(Mat* image) {
 				Color newColor = generateRandomColor();
 				Color oldColor = getColorStructureForPixel(image, i, j);
 
-
+				//cout << "i: " << i << ", " << "j: " << j << endl;
 				BFS(image, connected, i, j, oldColor, newColor, directionMatrix);
-
-
-
-
 
 			}
 

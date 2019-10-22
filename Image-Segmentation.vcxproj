@@ -93,6 +93,8 @@
       <SubSystem>Console</SubSystem>
       <AdditionalLibraryDirectories>C:\Program Files\opencv\build\x64\vc15\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opencv_world411d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>200000000</StackReserveSize>
+      <StackCommitSize>200000000</StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
