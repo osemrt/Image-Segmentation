@@ -8,7 +8,7 @@ void readImageFromUser(Mat* image) {
 	do {
 
 		cout << "Drag and drop your image here!" << endl;
-		//cin >> imagePath;
+		cin >> imagePath;
 
 		*image = imread(imagePath, IMREAD_UNCHANGED);
 
