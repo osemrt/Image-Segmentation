@@ -1,5 +1,6 @@
 #include "header_files/declarations.h"
 
+//A function to find the closest cluster index for the given pixel
 int findClosestCentroid(Mat* image, pxLocation* centroids, pxLocation* pxLocaiton, int N) {
 
 	float distance;

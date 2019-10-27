@@ -3,19 +3,27 @@
 int main(int argv, char** argc) {
 
 	srand(time(NULL));
-
 	Mat image;
-	readImageFromUser(&image);	
-	int numOfClusters = gettingKValueFromUser();
 
+	//Getting an image path and cluster number
+	//from the console
+	readImageFromUser(&image);
+	int numOfClusters = gettingClusterNumberFromUser();
+
+	//Showing the original image
 	imshow("original", image);
 
+	//Calling k_means()
 	k_means(&image, numOfClusters);
+
+	//Showing the image after applying k-means clustering
 	imshow("k-means [" + to_string(numOfClusters) + "]", image);
 
+	//Calling findConnectedComponents()
 	findConnectedComponents(&image);
-	imshow("connected-component", image);
 
+	//Showing the image after finding and coloring components
+	imshow("connected-component", image);
 
 	waitKey();
 

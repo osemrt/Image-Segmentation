@@ -1,8 +1,12 @@
 #include "header_files/declarations.h"
 
-int gettingKValueFromUser() {
+//A function to get the cluster number from the user
+//It pops up until the user typing a valid cluster number
+int gettingClusterNumberFromUser() {
 
-	cout << "\x1B[2J\x1B[H";		    // CSI[2J clears screen, CSI[H moves the cursor to top-left corner
+	//CSI[2J clears screen,
+	//CSI[H moves the cursor to top-left corner
+	cout << "\x1B[2J\x1B[H";		   
 	int n;
 
 	do {
@@ -14,7 +18,9 @@ int gettingKValueFromUser() {
 		cin >> n;
 
 		if (cin.fail()) {
-			cout << "\x1B[2J\x1B[H";		    // CSI[2J clears screen, CSI[H moves the cursor to top-left corner
+			//CSI[2J clears screen
+			//CSI[H moves the cursor to top-left corner
+			cout << "\x1B[2J\x1B[H";		    
 			cout << "Are you sure you entered a valid number?" << endl;
 		}		
 

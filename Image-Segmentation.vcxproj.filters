@@ -24,9 +24,6 @@
     <ClCompile Include="k-means.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gettinKValueFromUser.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="generateRandomLocationArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -72,10 +69,10 @@
     <ClCompile Include="hasSameColor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="createDirectionMatrix.cpp">
+    <ClCompile Include="showEachClusters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="createMatrix.cpp">
+    <ClCompile Include="gettingClusterNumberFromUser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

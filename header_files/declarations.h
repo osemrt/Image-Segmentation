@@ -4,7 +4,7 @@
 
 void readImageFromUser(Mat* image);
 void k_means(Mat* image, int N);
-int gettingKValueFromUser();
+int gettingClusterNumberFromUser();
 pxLocation* generateRandomLocation(Mat* image, int N);
 float findDistance(Mat* image, pxLocation pxLocation1, pxLocation pxLocation2);
 int findClosestCentroid(Mat* image, pxLocation* centroids, pxLocation* pxLocaiton, int N);
@@ -18,6 +18,6 @@ Color generateRandomColor();
 Color getColorStructureForPixel(Mat* image, int i, int j);
 bool isValid(Mat* image, int i, int j);
 bool hasSameColor(Color color, Mat* image, int i, int j);
-void BFS(Mat* image, bool** connected, int i, int j, Color oldColor, Color newColor, int** directionMatrix);
+void BFS(Mat* image, bool** connected, int i, int j, Color oldColor, Color newColor, int directionMatrix[][8]);
 void findConnectedComponents(Mat* image);
-int** createDirectionMatrix();
+void showEachCluster(Mat* image, vector< vector < pxLocation* > >* clusteredPixels, pxLocation* centroids, int N);

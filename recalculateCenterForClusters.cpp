@@ -9,13 +9,13 @@ void recalculateCenterForClusters(vector<vector<pxLocation*>>* v, pxLocation* ce
 		avgX = 0;
 		avgY = 0;
 		for (int j = 0; j < (*v)[i].size(); j++) {
-			avgX += (*v)[i][j]->x;
-			avgY += (*v)[i][j]->y;
+			avgX += (*v)[i][j]->i;
+			avgY += (*v)[i][j]->j;
 		}
 
 		if ((*v)[i].size() != 0) {
-			centroids[i].x = (int)avgX / (*v)[i].size();
-			centroids[i].y = (int)avgY / (*v)[i].size();
+			centroids[i].i = (int)avgX / (*v)[i].size();
+			centroids[i].j = (int)avgY / (*v)[i].size();
 		}
 
 	}

@@ -1,5 +1,6 @@
 #include "header_files/declarations.h"
 
+//It returns true if image[i][j] has the same color with Color
 bool hasSameColor(Color color, Mat* image, int i, int j) {
 
 	return

@@ -132,16 +132,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BFS.cpp" />
-    <ClCompile Include="createDirectionMatrix.cpp" />
     <ClCompile Include="createImageLocationMatrix.cpp" />
-    <ClCompile Include="createMatrix.cpp" />
     <ClCompile Include="euclideanDistance.cpp" />
     <ClCompile Include="extractPixelFromPreviousCluster.cpp" />
     <ClCompile Include="findClosestCentroid.cpp" />
     <ClCompile Include="findConnectedComponents.cpp" />
     <ClCompile Include="generateRandomLocationArray.cpp" />
     <ClCompile Include="getColorStructureForPixel.cpp" />
-    <ClCompile Include="gettinKValueFromUser.cpp" />
+    <ClCompile Include="gettingClusterNumberFromUser.cpp" />
     <ClCompile Include="hasSameColor.cpp" />
     <ClCompile Include="includePixelToCluster.cpp" />
     <ClCompile Include="isConnected.cpp" />
@@ -152,6 +150,7 @@
     <ClCompile Include="readImageFromUser.cpp" />
     <ClCompile Include="recalculateCenterForClusters.cpp" />
     <ClCompile Include="createConnectedMatrix.cpp" />
+    <ClCompile Include="showEachClusters.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header_files\common.h" />
